@@ -3,7 +3,6 @@ package com.optum.bc4.pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class ContactFormBase extends PageBase {
 	
@@ -23,8 +22,6 @@ public class ContactFormBase extends PageBase {
 
 	// Form fields
 	//NOTE: these are the fields shared across all orgs, others to be added in sub-classes
-	//TODO: Trying out not using FindBy to see if PageFactory maps 
-	//		field name to element name selector
 	public WebElement customerID;
 	public WebElement deceased;
 		public WebElement notInterested;
