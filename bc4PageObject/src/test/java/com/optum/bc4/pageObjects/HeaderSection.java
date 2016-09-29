@@ -3,8 +3,6 @@ package com.optum.bc4.pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.optum.bc4.utils.TestUtils;
-
 /**
  * Page object class to interact with Application header
  * 
@@ -22,7 +20,7 @@ public class HeaderSection extends PageBase {
 	public LoginPage logout() {
 		logoutbtn.click();
 		ModalLogout modal = new ModalLogout(driver);
-		TestUtils.waitForElement(modal.yesLogoutSessionBtn, 5, driver);
+		waitForElement(modal.yesLogoutSessionBtn, 5);
 		modal.closeModal(modal.yesLogoutSessionBtn);
 		return new LoginPage(driver);
 	}

@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.optum.bc4.utils.TestUtils;
-
 public class LoginPage extends PageBase {
 
 	// Page elements
@@ -34,7 +32,7 @@ public class LoginPage extends PageBase {
 		loginButton.click();
 
 		DashboardPage nextPage = new DashboardPage(driver);
-		if ( !TestUtils.waitForElement(nextPage.announceContainer, 15, driver) ) {
+		if ( !waitForElement(nextPage.announceContainer, 15) ) {
 			throw new IllegalStateException(driver.getCurrentUrl() + " did not display dashboard");
 		}
 		return nextPage;
