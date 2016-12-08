@@ -5,3 +5,7 @@ Some resources discovered so far with implementation ideas:
 * http://martinfowler.com/bliki/PageObject.html
 * https://github.com/SeleniumHQ/selenium/wiki/PageObjects
 * https://github.com/SeleniumHQ/selenium/wiki/PageFactory
+
+
+[] todo 1
+[] todo 2
