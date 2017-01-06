@@ -18,7 +18,7 @@ public class LoginTest extends BaseTest {
 		
 		LoginPage login = new LoginPage(driver);
 		
-		DashboardPage dashboard = login.loginValidCredentials("", "");
+		DashboardPage dashboard = login.loginValidCredentials(USERNAME, PASSWORD);
 		Assert.assertTrue(TestUtils.isElementDisplayed(dashboard.announceContainer));
 		
 		HeaderSection header = new HeaderSection(driver);

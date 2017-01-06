@@ -14,7 +14,7 @@ public class ContactTest extends BaseTest {
 		WebDriver driver = getWebDriver();
 		driver.get(BC4_URL);
 		LoginPage login = new LoginPage(driver);
-		DashboardPage dashboard = login.loginValidCredentials("", "");
+		DashboardPage dashboard = login.loginValidCredentials(USERNAME, PASSWORD);
 		dashboard.searchLoadContact("Genedit", "Atest");
 	}
 
